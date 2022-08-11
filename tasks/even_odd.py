@@ -9,4 +9,8 @@ def even_odd(arr: list[int]) -> float:
     Пример:
     even_odd([1, 2, 3, 4, 5]) == 0.8889
     """
-    raise NotImplementedError
+    even_sum = sum(filter(lambda x: x % 2 == 0, arr))
+    odd_sum = sum(filter(lambda x: x % 2 != 0, arr))
+    if even_sum and odd_sum:
+        return even_sum / odd_sum
+    return 0
