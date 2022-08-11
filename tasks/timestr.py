@@ -3,7 +3,7 @@ __all__ = (
 )
 
 
-def f(n: int, postfix: str) -> str:
+def f(n: int, postfix: str):
     if n < 10:
         return "0" + str(n) + postfix
     return str(n) + postfix
